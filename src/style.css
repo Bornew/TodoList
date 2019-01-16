@@ -1,0 +1,41 @@
+.input {
+  border: 1px
+}
+.show {
+  animation: show-item 2s ease-in;
+}
+.hide {
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+@keyframes show-item {
+  0% {
+    opacity: 0;
+    color: red;
+  }
+  50% {
+    opacity: 50%;
+    color: green;
+  }
+  100% {
+    opacity: 100%;
+    color: blue;
+  }
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.fade-enter-done {
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+.fade-exit-active {
+  opacity: 0;
+}
